@@ -6,17 +6,15 @@ namespace ThoughtsAndIdeasTests
 {
     internal class Thoughts
     {
+        private static readonly List<string> ThoughtsCollection = new List<string>();
         internal static void NoteDown(string thoughtText)
         {
-            
+            ThoughtsCollection.Add(thoughtText);
         }
 
         internal static IEnumerable<string> AllThoughts()
         {
-            //return new List<string>() { "This is a thought that I want to note down" };
-
-            yield return "This is a thought that I want to note down";
-
+            return ThoughtsCollection;
         }
     }
 }
