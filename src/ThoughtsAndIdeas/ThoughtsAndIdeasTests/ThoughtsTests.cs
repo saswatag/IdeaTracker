@@ -2,6 +2,7 @@ using System;
 using Xunit;
 using FluentAssertions;
 using System.Collections.Generic;
+using ThoughtsAndIdeas;
 
 namespace ThoughtsAndIdeasTests
 {

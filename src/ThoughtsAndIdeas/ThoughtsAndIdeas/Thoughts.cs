@@ -1,23 +1,21 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace ThoughtsAndIdeasTests
+namespace ThoughtsAndIdeas
 {
-    internal class Thoughts
+    public class Thoughts
     {
         private List<string> ThoughtsCollection { get; } = new List<string>();
                 
-        internal void NoteDown(string thoughtText)
+        public void NoteDown(string thoughtText)
         {
             ThoughtsCollection.Add(thoughtText);
         }
-        internal void NoteDown(IReadOnlyCollection<string> thoughts)
+        public void NoteDown(IReadOnlyCollection<string> thoughts)
         {
             ThoughtsCollection.AddRange(thoughts);
         }
 
-        internal IReadOnlyList<string> AllThoughts()
+        public IReadOnlyList<string> AllThoughts()
         {
             return ThoughtsCollection.AsReadOnly();
         }
