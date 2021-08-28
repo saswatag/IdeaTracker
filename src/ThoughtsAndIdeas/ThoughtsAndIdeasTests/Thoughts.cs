@@ -12,6 +12,10 @@ namespace ThoughtsAndIdeasTests
         {
             ThoughtsCollection.Add(thoughtText);
         }
+        internal void NoteDown(IReadOnlyCollection<string> thoughts)
+        {
+            ThoughtsCollection.AddRange(thoughts);
+        }
 
         internal IReadOnlyList<string> AllThoughts()
         {
