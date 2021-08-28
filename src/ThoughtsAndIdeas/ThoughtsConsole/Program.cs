@@ -6,7 +6,7 @@ namespace ThoughtsConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("This is a place to note down your thoughts. What's on your mind?");
         }
     }
 }
