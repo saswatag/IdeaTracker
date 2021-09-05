@@ -8,7 +8,9 @@ WORKDIR /src
 COPY ["ThoughtsConsole/ThoughtsConsole.csproj", "ThoughtsConsole/"]
 COPY ["ThoughtsAndIdeas/ThoughtsAndIdeas.csproj", "ThoughtsAndIdeas/"]
 RUN dotnet restore "ThoughtsConsole/ThoughtsConsole.csproj"
-COPY . .
+
+COPY ["ThoughtsAndIdeas/.", "ThoughtsAndIdeas/"]
+COPY ["ThoughtsConsole/.", "ThoughtsConsole/"]
 WORKDIR "/src/ThoughtsConsole"
 RUN dotnet build "ThoughtsConsole.csproj" -c Release -o /app/build
 
