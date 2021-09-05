@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ThoughtsConsole": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
