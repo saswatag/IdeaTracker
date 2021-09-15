@@ -14,7 +14,8 @@ namespace ThoughtsAndIdeasTests
             string thoughtText = "This is a thought that I want to note down";
             var thoughts = new Thoughts();
             thoughts.NoteDown(thoughtText);
-            thoughts.AllThoughts().Should().Contain(thoughtText);
+            //thoughts.AllThoughts().Should().Contain(thoughtText);
+            thoughts.AllThoughts().Should().Contain("some text");
         }
 
         [Fact]
